@@ -1,0 +1,11 @@
+<template name="ListaContactos">
+    {{> NuevoContacto }}
+
+    <p> Hola, existen {{ cantidad }} contactos en la aplicación </p>
+
+    {{#each contactos}}
+      <p>
+          Nombre completo: {{ nombre }} {{apellidos}} <button class="del"> x </button>
+      </p>
+    {{/each}}
+</template>
